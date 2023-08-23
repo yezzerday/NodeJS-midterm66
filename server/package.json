@@ -1,0 +1,14 @@
+{
+  "name": "nodejs-midterm",
+  "version": "1.0.0",
+  "description": "nodejs vuejs webblong server (back end)",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jaruda chaiyaporn",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
