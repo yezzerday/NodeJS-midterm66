@@ -1,21 +1,11 @@
 let express = require('express')
+let bodyParser = require('body-parser')
+
 const app = express()
-app.get('/status',function(req,res){
-    res.send('hello js')
-})
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({extended:true}))
 
-app.get('/hello/:person',function(req,res){
-    console.log('hello - '+ req.params.person)
-    res.send('say hello with '+ req.params.person)
-})
-
-app.get('/user/:userID',function(req,res){
-    res.send('ดูข้อมูลผู้ใช้งาน')
-})
-
-app.get('/users',function (req,res){
-    res.send('เรียกข้อมูลผู้ใช้งานทั้งหมด')
-})
+require('routes.js')
 
 let port = 8081
 
