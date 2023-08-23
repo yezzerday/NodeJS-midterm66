@@ -5,7 +5,7 @@ const app = express()
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:true}))
 
-require('routes.js')
+require('./route.js')(app)
 
 let port = 8081
 
